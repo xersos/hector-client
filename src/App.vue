@@ -2,6 +2,7 @@
  <div class="flexible-content">
     <!-- Sidebar -->
     <div class="sidebar-fixed position-fixed">
+
       <a class="logo-wrapper"><img alt="" class="img-fluid" src="./assets/logo-mdb-vue-small.png"/></a>
       <mdb-list-group class="list-group-flush">
         <router-link to="/dashboard" @click.native="activeItem = 1">
@@ -9,6 +10,7 @@
         </router-link>
       </mdb-list-group>
     </div>
+     <color-picker class="color">GORS FDP</color-picker>
     <!-- /Sidebar  -->
     <main>
       <div class="mt-5 p-5">
@@ -26,9 +28,13 @@
 <script>
 import Dashboard from './views/Dashboard'
 import { mdbContainer, mdbNavbar, mdbNavbarBrand, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbIcon, mdbListGroup, mdbListGroupItem, mdbCardBody, mdbFooter, waves } from 'mdbvue'
+import ColorPicker from 'vue-iro-color-picker';
+
 export default {
   name: 'App',
 components: {
+
+    ColorPicker,
     mdbContainer,
     mdbNavbar,
     mdbNavbarBrand,
