@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Dashboard from '@/views/Dashboard'
+import HelloWorld from '@/components/HelloWorld';
 
 Vue.use(Router);
 
@@ -13,6 +13,12 @@ export default new Router({
       component: Dashboard,
       props: { page: 1 },
       alias: '/'
+    },
+    {
+      path: '/404',
+      name: 'BadGateway',
+      props: { page: 5 },
+      component: BadGateway
     },
     {
       path: '*',

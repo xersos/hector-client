@@ -7,6 +7,9 @@
         <router-link to="/dashboard" @click.native="activeItem = 1">
           <mdb-list-group-item :action="true" :class="activeItem === 1 && 'active'"><mdb-icon icon="chart-pie" class="mr-3"/>Dashboard</mdb-list-group-item>
         </router-link>
+        <router-link to="/404" @click.native="activeItem = 5">
+          <mdb-list-group-item :action="true" :class="activeItem === 5 && 'active'"><mdb-icon icon="exclamation" class="mr-3"/>404</mdb-list-group-item>
+        </router-link>
       </mdb-list-group>
     </div>
     <!-- /Sidebar  -->
@@ -24,7 +27,6 @@
 </template>
 
 <script>
-import Dashboard from './views/Dashboard'
 import { mdbContainer, mdbNavbar, mdbNavbarBrand, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbIcon, mdbListGroup, mdbListGroupItem, mdbCardBody, mdbFooter, waves } from 'mdbvue'
 export default {
   name: 'App',

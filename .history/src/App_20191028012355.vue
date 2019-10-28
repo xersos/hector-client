@@ -24,7 +24,6 @@
 </template>
 
 <script>
-import Dashboard from './views/Dashboard'
 import { mdbContainer, mdbNavbar, mdbNavbarBrand, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbIcon, mdbListGroup, mdbListGroupItem, mdbCardBody, mdbFooter, waves } from 'mdbvue'
 export default {
   name: 'App',
